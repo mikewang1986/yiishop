@@ -1,0 +1,90 @@
+2016/03/27 04:49:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "account/favicon.ico".' in D:\xampp\htdocs\yiipig\yiishop\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yiipig\yiishop\framework\web\CWebApplication.php(141): CWebApplication->runController('account/favicon...')
+#1 D:\xampp\htdocs\yiipig\yiishop\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiipig\yiishop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/account/favicon.ico
+---
+2016/03/27 04:49:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "account/favicon.ico".' in D:\xampp\htdocs\yiipig\yiishop\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yiipig\yiishop\framework\web\CWebApplication.php(141): CWebApplication->runController('account/favicon...')
+#1 D:\xampp\htdocs\yiipig\yiishop\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiipig\yiishop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/account/favicon.ico
+---
+2016/03/27 04:50:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "b2c/admin/login".' in D:\xampp\htdocs\yiipig\yiishop\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yiipig\yiishop\framework\web\CWebApplication.php(141): CWebApplication->runController('b2c/admin/login')
+#1 D:\xampp\htdocs\yiipig\yiishop\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiipig\yiishop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/admin/login.html
+---
+2016/03/27 04:51:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "b2c/admin/login".' in D:\xampp\htdocs\yiipig\yiishop\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yiipig\yiishop\framework\web\CWebApplication.php(141): CWebApplication->runController('b2c/admin/login')
+#1 D:\xampp\htdocs\yiipig\yiishop\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiipig\yiishop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/admin/login.html
+---
+2016/03/27 04:52:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "b2c/admin/login".' in D:\xampp\htdocs\yiipig\yiishop\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yiipig\yiishop\framework\web\CWebApplication.php(141): CWebApplication->runController('b2c/admin/login')
+#1 D:\xampp\htdocs\yiipig\yiishop\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiipig\yiishop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/admin/login.html
+---
+2016/03/27 04:54:11 [error] [exception.CException] exception 'CException' with message 'MemberController 无法找到请求的视图 "_weixin_base".' in D:\xampp\htdocs\yiipig\yiishop\framework\web\CController.php:878
+Stack trace:
+#0 D:\xampp\htdocs\yiipig\yiishop\framework\web\CController.php(782): CController->renderPartial('_weixin_base', Array, true)
+#1 D:\xampp\htdocs\yiipig\yiishop\protected\modules\weixin\controllers\MemberController.php(38): CController->render('_weixin_base', Array)
+#2 D:\xampp\htdocs\yiipig\yiishop\framework\web\actions\CInlineAction.php(49): MemberController->actionIndex()
+#3 D:\xampp\htdocs\yiipig\yiishop\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\xampp\htdocs\yiipig\yiishop\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 D:\xampp\htdocs\yiipig\yiishop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\xampp\htdocs\yiipig\yiishop\framework\web\CWebApplication.php(282): CController->run('index')
+#7 D:\xampp\htdocs\yiipig\yiishop\framework\web\CWebApplication.php(141): CWebApplication->runController('weixin/member/i...')
+#8 D:\xampp\htdocs\yiipig\yiishop\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#9 D:\xampp\htdocs\yiipig\yiishop\admin.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/admin.php?r=weixin/member/index
+HTTP_REFERER=http://yiishop.com.cn/admin.php?r=order/default/index
+---
+2016/03/27 04:54:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/ace/js/oct/cms/category.js".' in D:\xampp\htdocs\yiipig\yiishop\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yiipig\yiishop\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/ace/js/o...')
+#1 D:\xampp\htdocs\yiipig\yiishop\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiipig\yiishop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/ace/js/oct/cms/category.js
+HTTP_REFERER=http://yiishop.com.cn/admin.php?r=cms/category/index
+---
+2016/03/27 04:54:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/ace/js/oct/cms/category.js".' in D:\xampp\htdocs\yiipig\yiishop\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yiipig\yiishop\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/ace/js/o...')
+#1 D:\xampp\htdocs\yiipig\yiishop\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\yiipig\yiishop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/ace/js/oct/cms/category.js
+HTTP_REFERER=http://yiishop.com.cn/admin.php?r=cms/category/index
+---
+2016/03/27 08:37:56 [error] [exception.CException] exception 'CException' with message 'MemberController 无法找到请求的视图 "_weixin_base".' in D:\xampp\htdocs\yiiweixin\framework\web\CController.php:878
+Stack trace:
+#0 D:\xampp\htdocs\yiiweixin\framework\web\CController.php(782): CController->renderPartial('_weixin_base', Array, true)
+#1 D:\xampp\htdocs\yiiweixin\protected\modules\weixin\controllers\MemberController.php(38): CController->render('_weixin_base', Array)
+#2 D:\xampp\htdocs\yiiweixin\framework\web\actions\CInlineAction.php(49): MemberController->actionIndex()
+#3 D:\xampp\htdocs\yiiweixin\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\xampp\htdocs\yiiweixin\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 D:\xampp\htdocs\yiiweixin\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\xampp\htdocs\yiiweixin\framework\web\CWebApplication.php(282): CController->run('index')
+#7 D:\xampp\htdocs\yiiweixin\framework\web\CWebApplication.php(141): CWebApplication->runController('weixin/member/i...')
+#8 D:\xampp\htdocs\yiiweixin\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#9 D:\xampp\htdocs\yiiweixin\admin.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/admin.php?r=weixin/member/index
+HTTP_REFERER=http://yiishop.com.cn/admin.php?r=order/default/index
+---

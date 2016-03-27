@@ -1,0 +1,10 @@
+<?php
+$this->breadcrumbs=array(
+    '内容管理',
+    '栏目管理'=>array('index'),
+    '编辑栏目-'.$model['category_row']['name']
+);
+?>
+<?php
+$this->renderPartial('_form',array('action'=>'update&id='.$model['category_row']['id'],'model'=>$model));
+?>
