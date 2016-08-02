@@ -23,13 +23,11 @@ class BaseController extends Controller
         if (isset($this->getModule()->id)) $this->module = $this->getModule()->id;
         $this->controller = $this->getId();
         if (empty(Yii::app()->session['_admini'])) $this->redirect('index.php?r=admin/login');
-
         $this->admini = Yii::app()->session['_admini'];
-
         $this->ActList = XAdminiAcl::filterMenu($this->Act($this->admini['acl']),$this->admini['super']);
         $this->Pemission($this->Act($this->admini['acl']),$this->admini['super']);
-
         $this->connection = Yii::app()->db;
+       
     }
 
     /**

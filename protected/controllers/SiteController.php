@@ -5,8 +5,8 @@ class SiteController extends CController
     public function actionIndex()
     {
         $this->redirect('?r=admin/login');
+        
     }
-
 	/**
 	 * 错误信息
 	 */
@@ -35,10 +35,8 @@ class SiteController extends CController
          *
          */
         $php_path = $_SERVER['DOCUMENT_ROOT']. '/';
-
         //文件保存目录路径
         $save_path = $php_path;
-
         //文件保存目录URL
         $save_url = '';
         //定义允许上传的文件扩展名
@@ -50,11 +48,9 @@ class SiteController extends CController
         );
         //最大文件大小
         $max_size = 1000000;
-
         $save_path = realpath($save_path) . '/';
 //        var_dump($save_path);die();
         //PHP上传失败
-
         //有上传文件时
         if (empty($_FILES) === false) {
             //原文件名
@@ -117,14 +113,12 @@ class SiteController extends CController
             $new_file_name = date("YmdHis") . '' . rand(10000, 99999) . '.' . $file_ext;
             //移动文件
             $file_path = $save_path . $new_file_name;
-
             if (move_uploaded_file($tmp_name, $file_path) === false) {
 
                 $this->alert("上传文件失败。");
             }
             @chmod($file_path, 0644);
             $file_url = $save_url . $new_file_name;
-
             header('Content-type: text/html; charset=UTF-8');
             echo json_encode(array('error' => 0, 'url' => $file_url));
             exit;

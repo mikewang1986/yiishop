@@ -17,7 +17,6 @@ class AccountController extends B2cController
     public function actionIndex()
     {
         $this->CheckLogin();
-
         //最近的订单
         $Order = new ModelOrder();
         $model['order_list'] = $Order->items('order_id,final_amount,createtime,status,pay_status',"member_id = {$this->member_id}");

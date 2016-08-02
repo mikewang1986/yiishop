@@ -1,6 +1,5 @@
 <link rel="stylesheet" href="<?php echo Yii::app()->theme->baseUrl; ?>/kindeditor-4.1.10/themes/default/default.css" />
 <link rel="stylesheet" href="<?php echo Yii::app()->theme->baseUrl; ?>/kindeditor-4.1.10/plugins/code/prettify.css" />
-
 <script charset="utf-8" src="<?php echo Yii::app()->theme->baseUrl; ?>/kindeditor-4.1.10/kindeditor.js"></script>
 <script charset="utf-8" src="<?php echo Yii::app()->theme->baseUrl; ?>/kindeditor-4.1.10/lang/zh_CN.js"></script>
 <script charset="utf-8" src="<?php echo Yii::app()->theme->baseUrl; ?>/kindeditor-4.1.10/plugins/code/prettify.js"></script>
@@ -9,7 +8,6 @@
         文章
     </h1>
 </div>
-
 <div class="row">
     <div class="col-xs-12">
         <form class="form-horizontal" id="validation-form" novalidate="novalidate" action="?r=cms/article/<?php echo $action;?>" method="post">

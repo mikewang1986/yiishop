@@ -1,6 +1,4 @@
 <?php
-
-
 class AdminController extends Controller
 {
     public $layout='//layouts/admin_login';
@@ -60,7 +58,6 @@ class AdminController extends Controller
     public function actionLogout()
     {
         unset(Yii::app()->session['_admini']);
-
         $this->redirect(array('admin/login'));
     }
 

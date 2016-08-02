@@ -5,7 +5,7 @@
             <label class="control-label no-padding-right"> 编号: <input type="text" class="goods_bn" name="Goods[bn]" value="<?php echo isset($params['bn'])?$params['bn']:'';?>"></label>
         </div>
         <div class="col-sm-2 form-group">
-            <label class="control-label no-padding-right"> 名称: <input type="text" class="goods_name" name="Goods[name]" value="<?php echo isset($params['goods_name'])?$params['goods_name']:'';?>"></label>
+            <label class="control-label no-padding-right"> 名称: <input type="text" class="goods_name" name="Goods[name]" value="<?php echo isset($params['name'])?$params['name']:'';?>"></label>
         </div>
         <div class="col-sm-3 form-group">
             <label class="control-label no-padding-right"> 销售价:

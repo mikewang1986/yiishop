@@ -15,6 +15,7 @@ class BrandController extends BaseController
 
     public function init()
     {
+
         $this->registerJs(
             array('jquery.uploadify'),
             'end','bootstrap'

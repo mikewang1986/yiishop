@@ -49,6 +49,7 @@ class DefaultController extends BaseController
      */
     public function actionIndex()
 	{
+
         $pageIndex = isset($_GET['page'])?$_GET['page']:1;
         $params = $this->get('Goods');
         $Goods = new Goods();
