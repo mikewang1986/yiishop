@@ -9,11 +9,9 @@
  * @license       http://www.yiitian.com/license
  * @version       v1.0.0
  */
-
 class ModelProduct extends B2cModel
 {
     public $table = '{{b2c_products}}';
-
     /**
      * 货品单条记录
      *
@@ -24,10 +22,8 @@ class ModelProduct extends B2cModel
     public function row($product_id,$select='*')
     {
         $row = $this->ModelQueryRow("SELECT {$select} FROM {{b2c_products}} WHERE product_id = {$product_id}");
-
         return $row;
     }
-
     /**
      * 货品详情
      *
@@ -55,10 +51,8 @@ class ModelProduct extends B2cModel
         $result['row']['store'] = $row['store'] - $row['freez'];
         $result['row']['cost'] = sprintf('%0.2f',$row['cost']);
         $result['row']['mktprice'] = sprintf('%0.2f',$row['mktprice']);
-
         //商品图片
         $imageimage_list = $this->GoodsImage($result['row']['goods_id']);
-
         $result['image'] = array();
         if ($imageimage_list) {
             $k = 1;
@@ -79,7 +73,6 @@ class ModelProduct extends B2cModel
             if (isset($result['image']['s_image'])) ksort($result['image']['s_image']);
             if (isset($result['image']['l_image'])) ksort($result['image']['l_image']);
         }
-
         return $result;
     }
 

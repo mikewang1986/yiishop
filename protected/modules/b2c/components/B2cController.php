@@ -3,10 +3,11 @@
  * 控制器基础类，所有控制器均需继承此类
  * @author chenfenghua <843958575@qq.com>
  */
-
 class B2cController extends Controller
 {
     public $layout='column_default';
+    //add by wanglei 每个页面基类
+    public $jqPageId;   //must be unique across all pages in jquery mobile.
     public $pagesize = 15;
     public $username;
     public $member_id = '';
@@ -23,6 +24,7 @@ class B2cController extends Controller
     public function init()
     {
         $this->img = 'http://'.$_SERVER['HTTP_HOST'].'/';
+        //购物车内容
         $this->cart = Layouts::Cart($this->member_id);
     }
     /**
@@ -77,8 +79,6 @@ class B2cController extends Controller
         if (is_int($value) || is_float($value)) {
             return $value;
         }
-
-        //return '\'' . mysql_real_escape_string($value) . '\'';
         return htmlspecialchars(addslashes($value));
     }
 

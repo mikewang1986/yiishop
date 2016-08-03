@@ -17,10 +17,7 @@
         <!--LayerSlider end-->
     </div>
     <!-- END SLIDER -->
-
     <div class="main">
         <?php echo $content;?>
     </div>
-
-
 <?php $this->endContent(); ?>

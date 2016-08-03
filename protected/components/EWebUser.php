@@ -1,5 +1,6 @@
 <?php
-class EWebUser extends CWebUser {
+//共通进行权限控制
+class EWebUser extends CWebUser{
     /**
      *
      * @param UserIdentity $identity
@@ -13,12 +14,10 @@ class EWebUser extends CWebUser {
     public function getRole() {
         return $this->getState('role');
     }
-
     public function isPatient() {
         $role = $this->getRole();
         return $role == User::ROLE_PATIENT;
     }
-
     public function isDoctor() {
         $role = $this->getRole();
         return $role == User::ROLE_DOCTOR;

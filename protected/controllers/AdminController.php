@@ -2,13 +2,11 @@
 class AdminController extends Controller
 {
     public $layout='//layouts/admin_login';
-
     public function actionIndex()
     {
         $this->redirect(array('login'));
 
     }
-
     /**
      * 后台管理员登录
      */
@@ -74,7 +72,6 @@ class AdminController extends Controller
             array(':role_id'=>$role_id),
             array('select'=>'group_name,acl')
         );
-
         return $role_row;
     }
 } 

@@ -10,9 +10,9 @@ class ApiRequestUrl {
             return "http://crm.dev.mingyizd.com";
         }
     }
+    //得到域名后的地址
     public function getUrl($url) {
-        return $this->getHostInfo() . '/' . $url;
-        
+        return $this->getHostInfo() . '/' . $url;    
     }
     public function getUrlAdminSalesBookingCreate() {
         return $this->getUrl($this->admin_salesbooking_create);

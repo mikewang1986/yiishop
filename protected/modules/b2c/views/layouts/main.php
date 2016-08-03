@@ -1,24 +1,19 @@
 <!DOCTYPE html>
 <head>
     <meta charset="utf-8">
-    <title>Yiishop商城</title>
-
+    <title>电子商城</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
     <meta content="yiishop专注于电子商务应用开发，为中小企业提供全面的电子商务解决方案" name="description">
     <meta content="php,php项目,php开源项目,php开源商城,yii,yii项目,yii开源项目,yii开源商城,yii商城系统,yiishop,yiishop开源商城" name="keywords">
     <meta content="tank" name="author">
-
     <link rel="shortcut icon" href="favicon.ico">
     <link href="/favicon.ico" rel="SHORTCUT ICON" type="image/ico">
-
     <!-- Fonts START -->
     <link href="<?php echo Yii::app()->theme->baseUrl; ?>/css/font_1.css" rel="stylesheet" type="text/css">
     <link href="<?php echo Yii::app()->theme->baseUrl; ?>/css/font_2.css" rel="stylesheet" type="text/css">
     <link href="<?php echo Yii::app()->theme->baseUrl; ?>/css/font_3.css" rel="stylesheet" type="text/css">
     <!-- Fonts END -->
-
     <!-- Global styles START -->
     <link href="<?php echo Yii::app()->theme->baseUrl; ?>/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="<?php echo Yii::app()->theme->baseUrl; ?>/plugins/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
