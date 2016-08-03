@@ -3,7 +3,6 @@
  * 控制器基础类，所有控制器均需继承此类
  * @author chenfenghua <843958575@qq.com>
  */
-
 class BaseController extends Controller
 {
     public $connection;
